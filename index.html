@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Transfer Learning Framework for Low-Resource Text-to-Speech using a Large-Scale Unlabeled Speech Corpus</title>
+    <title>MakeSinger: A Semi-Supervised Training Method for Multi-Speaker Singing Voice Synthesis by Classifier-free Diffusion Guidance</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156162365-1"></script>
@@ -29,7 +29,7 @@
     <div class="container" style="max-width:1200px;">
         <div class='row mt-5 mb-3'>
             <div class='col text-center'>
-                <p class="h2 font-weight-normal">Transfer Learning Framework for Low-Resource Text-to-Speech using a Large-Scale Unlabeled Speech Corpus</p>
+                <p class="h2 font-weight-normal">MakeSinger: A Semi-Supervised Training Method for Multi-Speaker Singing Voice Synthesis by Classifier-free Diffusion Guidance</p>
             </div>
         </div>
     </div>
@@ -39,7 +39,7 @@
 	    
 	    
         <div class='col text-center' style="font-style:italic">
-		<a style="margin: 0 auto;"><span><b>Authors</b>: Minchan Kim<sup>*</sup>, Myeonghun Jeong<sup>*</sup> </span></a>, Byoung Jin Choi, Sunghwan Ahn, Joun Yeop Lee, and Nam Soo Kim
+		<a style="margin: 0 auto;"><span><b>Authors</b>: Semin Kim, Myeonghun Jeong, Hyeonseung Lee, Byoung Jin Choi, Minchan Kim, and Nam Soo Kim
             </div>
 	<div class='col text-center' style="font-style:italic">
 		<a style="margin: 0 auto;">(*: equal contribution)
@@ -84,7 +84,7 @@
 
                 <div class="container" style="max-width:850px; margin-top: 20px; margin-bottom: 40px">
                     <p style='line-height:1.3; font-size:large; text-align: justify'>
-                       Training a text-to-speech (TTS) model requires a large scale text labeled speech corpus, which is troublesome to collect. In this paper, we propose a transfer learning framework for TTS that utilizes a large amount of unlabeled speech dataset for pre-training. By leveraging wav2vec2.0 representation, unlabeled speech can highly improve performance, especially in the lack of labeled speech. We also extend the proposed method to zero-shot multi-speaker TTS (ZS-TTS). The experimental results verify the effectiveness of the proposed method in terms of naturalness, intelligibility, and speaker generalization. We highlight that the single speaker TTS model fine-tuned on the only 10 minutes of labeled dataset outperforms the other baselines, and the ZS-TTS model fine-tuned on the only 30 minutes of single speaker dataset can generate the voice of the arbitrary speaker, by pre-training on unlabeled multi-speaker speech corpus.
+                       In this paper, we propose MakeSinger, a semi-supervised training method for singing voice synthesis~(SVS) utilizing classifier-free diffusion guiding. The proposed method enables us to train the diffusion-based SVS model using any speech and singing voice data regardless of its labeling. At inference, our novel dual guiding mechanism gives text and pitch guidance on the reverse diffusion step by estimating the score of masked input. To show the effectiveness of our approach, we trained MakeSinger on a multi-speaker singing voice dataset, varying the ratio of labeled data and unlabeled data. Experimental results show that the model trained on semi-supervised manner outperforms other baseline models trained only on the labeled data in terms of pronunciation and overall quality, especially when the ratio of labeled data is low. Furthermore, we demonstrate that by adding Text-to-Speech~(TTS) data in training, the model can synthesize the singing voices of TTS speakers.
                     </p>
                 </div>
             </div>
