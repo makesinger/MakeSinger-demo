@@ -25,7 +25,7 @@
     <div class="container" style="max-width:1200px;">
         <div class="row mt-5 mb-3">
             <div class="col text-center">
-                <p class="h2 font-weight-normal">MakeSinger: A Semi-Supervised Training Method for Multi-Speaker Singing Voice Synthesis by Classifier-free Diffusion Guidance</p>
+                <p class="h2 font-weight-normal">MakeSinger: A Semi-Supervised Training Method for Data-Efficient Singing Voice Synthesis via Classifier-free Diffusion Guidance</p>
             </div>
         </div>
     </div>
@@ -75,7 +75,7 @@
 
                 <div class="container" style="max-width:850px; margin-top: 20px; margin-bottom: 40px">
                     <p style="line-height:1.3; font-size:large; text-align: justify">
-                       In this paper, we propose MakeSinger, a semi-supervised training method for singing voice synthesis~(SVS) utilizing classifier-free diffusion guiding. The proposed method enables us to train the diffusion-based SVS model using any speech and singing voice data regardless of its labeling. At inference, our novel dual guiding mechanism gives text and pitch guidance on the reverse diffusion step by estimating the score of masked input. To show the effectiveness of our approach, we trained MakeSinger on a multi-speaker singing voice dataset, varying the ratio of labeled data and unlabeled data. Experimental results show that the model trained on semi-supervised manner outperforms other baseline models trained only on the labeled data in terms of pronunciation and overall quality, especially when the ratio of labeled data is low. Furthermore, we demonstrate that by adding Text-to-Speech~(TTS) data in training, the model can synthesize the singing voices of TTS speakers.
+                       In this paper, we propose MakeSinger, a semi-supervised training method for singing voice synthesis (SVS) via classifierfree diffusion guidance. The challenge in SVS lies in the costly process of gathering aligned sets of text, pitch, and audio data. MakeSinger enables the training of the diffusion-based SVS model from any speech and singing voice data regardless of its labeling, thereby enhancing the quality of generated voices with large amount of unlabeled data. At inference, our novel dual guiding mechanism gives text and pitch guidance on the reverse diffusion step by estimating the score of masked input. Experimental results show that the model trained in a semisupervised manner outperforms other baselines trained only on the labeled data in terms of pronunciation, pitch accuracy and overall quality. Furthermore, we demonstrate that by adding Text-to-Speech (TTS) data in training, the model can synthesize the singing voices of TTS speakers even without their singing voices.
                     </p>
                 </div>
             </div>
